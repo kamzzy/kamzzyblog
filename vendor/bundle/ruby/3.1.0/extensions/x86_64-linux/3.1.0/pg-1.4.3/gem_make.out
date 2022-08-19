@@ -1,5 +1,5 @@
 current directory: /mnt/e/Documents/GitHub/A_RubyEnviroment/kamzzyblog/vendor/bundle/ruby/3.1.0/gems/pg-1.4.3/ext
-/home/wonderwoman/.rbenv/versions/3.1.2/bin/ruby -I /home/wonderwoman/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220819-15233-sm35k4.rb extconf.rb
+/home/wonderwoman/.rbenv/versions/3.1.2/bin/ruby -I /home/wonderwoman/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220819-25803-xbprth.rb extconf.rb
 Calling libpq with GVL unlocked
 checking for pg_config... yes
 Using config values from /usr/bin/pg_config
@@ -239,5 +239,5 @@ linking shared-object pg_ext.so
 
 current directory: /mnt/e/Documents/GitHub/A_RubyEnviroment/kamzzyblog/vendor/bundle/ruby/3.1.0/gems/pg-1.4.3/ext
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 pg_ext.so ./.gem.20220819-15233-4csdsv
+/usr/bin/install -c -m 0755 pg_ext.so ./.gem.20220819-25803-56mb7q
 installing pg_ext libraries

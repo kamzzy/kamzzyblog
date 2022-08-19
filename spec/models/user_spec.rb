@@ -1,11 +1,10 @@
-# frozen_string_literal: true
-
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
   before do
     @user = User.new(name: 'Example User',
-                     photo: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', bio: 'a short bio', posts_counter: 0)
+                     photo: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png',
+                     bio: 'a short bio', posts_counter: 0)
   end
   it 'is valid with valid attributes' do
     expect(@user).to be_valid

@@ -1,5 +1,5 @@
 current directory: /mnt/e/Documents/GitHub/A_RubyEnviroment/kamzzyblog/vendor/bundle/ruby/3.1.0/gems/puma-5.6.4/ext/puma_http11
-/home/wonderwoman/.rbenv/versions/3.1.2/bin/ruby -I /home/wonderwoman/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220819-15233-36onmd.rb extconf.rb
+/home/wonderwoman/.rbenv/versions/3.1.2/bin/ruby -I /home/wonderwoman/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220819-25803-au7ssq.rb extconf.rb
 checking for BIO_read() in -lcrypto... yes
 checking for SSL_CTX_new() in -lssl... yes
 checking for openssl/bio.h... yes
@@ -24,4 +24,4 @@ linking shared-object puma/puma_http11.so
 
 current directory: /mnt/e/Documents/GitHub/A_RubyEnviroment/kamzzyblog/vendor/bundle/ruby/3.1.0/gems/puma-5.6.4/ext/puma_http11
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20220819-15233-adrz1x/puma
+/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20220819-25803-ykbxz3/puma

@@ -1,5 +1,5 @@
 current directory: /mnt/e/Documents/GitHub/A_RubyEnviroment/kamzzyblog/vendor/bundle/ruby/3.1.0/gems/debug-1.6.2/ext/debug
-/home/wonderwoman/.rbenv/versions/3.1.2/bin/ruby -I /home/wonderwoman/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220819-15233-7rkbxo.rb extconf.rb
+/home/wonderwoman/.rbenv/versions/3.1.2/bin/ruby -I /home/wonderwoman/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220819-25803-tnzz3e.rb extconf.rb
 creating Makefile
 
 current directory: /mnt/e/Documents/GitHub/A_RubyEnviroment/kamzzyblog/vendor/bundle/ruby/3.1.0/gems/debug-1.6.2/ext/debug
@@ -13,4 +13,4 @@ linking shared-object debug/debug.so
 
 current directory: /mnt/e/Documents/GitHub/A_RubyEnviroment/kamzzyblog/vendor/bundle/ruby/3.1.0/gems/debug-1.6.2/ext/debug
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 debug.so ./.gem.20220819-15233-kqdank/debug
+/usr/bin/install -c -m 0755 debug.so ./.gem.20220819-25803-amhbal/debug

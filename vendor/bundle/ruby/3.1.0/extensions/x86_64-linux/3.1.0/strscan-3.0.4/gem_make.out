@@ -1,5 +1,5 @@
 current directory: /mnt/e/Documents/GitHub/A_RubyEnviroment/kamzzyblog/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.4/ext/strscan
-/home/wonderwoman/.rbenv/versions/3.1.2/bin/ruby -I /home/wonderwoman/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220819-15233-k2h0ib.rb extconf.rb
+/home/wonderwoman/.rbenv/versions/3.1.2/bin/ruby -I /home/wonderwoman/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220819-25803-4wfhsy.rb extconf.rb
 checking for onig_region_memsize() in ruby.h... yes
 creating Makefile
 
@@ -13,4 +13,4 @@ linking shared-object strscan.so
 
 current directory: /mnt/e/Documents/GitHub/A_RubyEnviroment/kamzzyblog/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.4/ext/strscan
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 strscan.so ./.gem.20220819-15233-w58i67
+/usr/bin/install -c -m 0755 strscan.so ./.gem.20220819-25803-mg7jbk

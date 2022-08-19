@@ -1,5 +1,5 @@
 current directory: /mnt/e/Documents/GitHub/A_RubyEnviroment/kamzzyblog/vendor/bundle/ruby/3.1.0/gems/msgpack-1.5.4/ext/msgpack
-/home/wonderwoman/.rbenv/versions/3.1.2/bin/ruby -I /home/wonderwoman/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220819-15233-5sjmwm.rb extconf.rb
+/home/wonderwoman/.rbenv/versions/3.1.2/bin/ruby -I /home/wonderwoman/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220819-25803-6978u6.rb extconf.rb
 checking for ruby/st.h... yes
 checking for st.h... no
 checking for rb_enc_interned_str() in ruby.h... yes
@@ -27,4 +27,4 @@ linking shared-object msgpack/msgpack.so
 
 current directory: /mnt/e/Documents/GitHub/A_RubyEnviroment/kamzzyblog/vendor/bundle/ruby/3.1.0/gems/msgpack-1.5.4/ext/msgpack
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 msgpack.so ./.gem.20220819-15233-grpssa/msgpack
+/usr/bin/install -c -m 0755 msgpack.so ./.gem.20220819-25803-ml190w/msgpack
