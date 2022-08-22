@@ -1,12 +1,9 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  resources :posts
-  resources :likes
-  resources :comments
-  resources :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get 'person/index' => 'person#index'
+  get 'users' => 'users#index'
+  get 'users/:id' => 'users#show'
+  get 'posts' => 'posts#index'
+  get 'posts/:id' => 'posts#show'
 end
