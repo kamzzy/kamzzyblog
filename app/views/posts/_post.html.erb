@@ -1,0 +1,19 @@
+      <%= render post.user %>
+  <div id="<%= dom_id post %>" class="grid-container">
+     <div class="post-display">
+   <p>
+    <strong>Post #<%= post.id %></strong>
+  </p>
+    <p>
+    <strong>Text:</strong>
+    <%= post.text %>
+  </p>
+
+  <span class="counter-span">
+    <strong>Comments:  <%= post.comments_counter %></strong>
+    <strong>Likes:  <%= post.likes_counter %></strong>
+  </span>
+  </div>
+</div>
+
+</div>
