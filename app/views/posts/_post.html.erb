@@ -6,7 +6,7 @@
   </p>
     <p>
     <strong>Text:</strong>
-    <%= post.text %>
+    <%= link_to post.text, user_post_path(@user, post.id) %>
   </p>
 
   <span class="counter-span">
