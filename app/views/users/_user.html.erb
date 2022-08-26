@@ -4,7 +4,7 @@
   </div>
   <div class="grid-item">
     <h1><%= link_to user.name, user %></h1>
-    <span class="post-counter"> <%= link_to "Number Of Posts:", user %> <%= link_to user.posts_counter, user %></span>
+    <span class="post-counter"> <%= link_to "Number Of Posts:", user %> <%= link_to user.posts.count, user %></span> 
   </div>
   
   

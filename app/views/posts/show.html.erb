@@ -1,8 +1,8 @@
 <div class="one-post">
 <h1>Post #<%= @post.id %> By <%= @post.user.name %>  </h1>
 <span class= "counter-span"> 
-<strong>Comments: <%= @post.comments_counter %> </strong>
-<strong>Likes: <%= @post.likes_counter %> </strong>
+<strong>Comments: <%= @post.comments.count %> </strong>
+<strong>Likes: <%= @post.likes.count %> </strong>
  </span>
  <div class="post-text">
     <p><%= @post.text %> </p>
