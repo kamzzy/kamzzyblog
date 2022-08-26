@@ -3,7 +3,6 @@
   <h3 class="user_bio"><%= @user.bio %> </h3>
 </div>
 <%= render @posts%>
-<span class="see-more"> 
-<%= redirect_to @posts %>
-<%# <%= link_to 'See More', post %>  %>
+<span class="see-more">  
+<%= link_to "See More Posts", user_posts_path(@user) %>
 </span> 
