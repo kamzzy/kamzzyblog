@@ -1,0 +1,19 @@
+   
+  <div id="<%= dom_id post %>" class="grid-container">
+   <div class="post-display">
+        <p>
+          <strong>Post #<%= post.id %></strong>
+        </p>
+        <p>
+        <%= link_to post.text, user_post_path(@user, post.id) %>
+      </p>
+
+      <span class="counter-span">
+        <strong>Comments:  <%= post.comments.count %></strong>
+        <strong>Likes:  <%= post.likes.count %></strong>
+      </span>
+      <div class="comment-display">
+      <%= render post.five_most_recent_comments %>
+      </div>
+   </div>
+ </div>
