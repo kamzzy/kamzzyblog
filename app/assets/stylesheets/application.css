@@ -123,10 +123,10 @@ a:active {
   text-align: center;
 }
 
-.create-new-post h2, 
-.post-form, 
-.new-comment, 
-.new-post, 
+.create-new-post h2,
+.post-form,
+.new-comment,
+.new-post,
 .add-comment {
   display: flex;
   justify-content: center;
