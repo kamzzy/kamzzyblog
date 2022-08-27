@@ -13,4 +13,10 @@ class PostsController < ApplicationController
     @user = User.find(params[:user_id])
     @post = Post.new
   end
+
+  def create
+    @user = User.find(params[:user_id])
+    @post = @user.posts.create(post_params)
+    redirect_to user_post_path(@user, @post)
+  end
 end

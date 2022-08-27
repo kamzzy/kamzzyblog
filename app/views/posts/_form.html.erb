@@ -1,28 +1,28 @@
-<%= form_with model: @post, :url => "new_user_post_path" do |form| %>
+<%= form_with model: [@user, @post] do |form| %>
 
   <div>
-    <%= form.label :user_id %>
-    <%= form.number_field :user_id %>
+    <%= form.label :user_id, "User ID" %>
+    <%= form.number_field :user_id, label: false %>
   </div>
 
   <div>
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.label :title, "Post Title" %>
+    <%= form.text_field :title, label: false %>
   </div>
 
   <div>
-    <%= form.label :text %>
-    <%= form.text_field :text %>
+    <%= form.label :text, "Post Content" %>
+    <%= form.text_field :text, label: false %>
   </div>
 
   <div>
     <%= form.label :comments_counter %>
-    <%= form.number_field :comments_counter %>
+    <%= form.number_field :comments_counter, :value => 0 %>
   </div>
 
   <div>
     <%= form.label :likes_counter %>
-    <%= form.number_field :likes_counter %>
+    <%= form.number_field :likes_counter, :value => 0 %>
   </div>
     <%= form.submit "Submit Post" %>
   </div>
