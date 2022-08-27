@@ -13,6 +13,7 @@
         <%= link_to post.text, user_post_path(@user, post.id) %>
       </p>
 
+      <span class="add-comment"><%= link_to "Add A Comment", new_user_post_comment_path(@user, post.id) %> </span>
       <span class="counter-span">
         <strong>Comments:  <%= post.comments.count %></strong>
         <strong>Likes:  <%= post.likes.count %></strong>
