@@ -117,3 +117,8 @@ a:active {
   border-right: solid 2px #ccc;
   border-bottom: solid 2px #ccc;
 }
+
+.post-text h3,
+.title {
+  text-align: center;
+}

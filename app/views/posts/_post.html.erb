@@ -1,10 +1,15 @@
    
   <div id="<%= dom_id post %>" class="grid-container">
+  <div class="new-post">
+  </div>
    <div class="post-display">
         <p>
           <strong>Post #<%= post.id %></strong>
         </p>
-        <p>
+        <p class="title">
+        <strong><%= link_to post.title, user_post_path(@user, post.id) %></strong>
+      </p>
+       <p>
         <%= link_to post.text, user_post_path(@user, post.id) %>
       </p>
 

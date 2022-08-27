@@ -8,4 +8,9 @@ class PostsController < ApplicationController
     @post = Post.find_by(id: params[:id])
     @user = User.find(params[:user_id])
   end
+
+  def new
+    @user = User.find(params[:user_id])
+    @post = Post.new
+  end
 end
