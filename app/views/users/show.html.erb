@@ -2,7 +2,7 @@
 <div class="grid-container">
   <h3 class="user_bio"><%= @user.bio %> </h3>
 </div>
-<%= link_to 'Create new post', new_user_post_path(@user) %>
+ <h3 class="new-post"><%= link_to 'Create New Post', new_user_post_path(@user) %></h3>
 <%= render @user.three_most_recent_posts%>
 <span class="see-more">  
 <%= link_to "See More Posts", user_posts_path(@user) %>
