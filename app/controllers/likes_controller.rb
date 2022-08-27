@@ -15,6 +15,7 @@ class LikesController < ApplicationController
       render :new
     end
   end
+
   private
 
   def like_params
