@@ -12,11 +12,9 @@
        <p>
         <%= link_to post.text, user_post_path(@user, post.id) %>
       </p>
-
-      <span class="add-comment"><%= link_to "Add A Comment", new_user_post_comment_path(@user, post.id) %> </span>
       <span class="counter-span">
-        <strong>Comments:  <%= post.comments.count %></strong>
-        <strong>Likes:  <%= post.likes.count %></strong>
+        <strong><%= link_to  "Add Comments:", new_user_post_comment_path(@user, post.id) %> <%= post.comments.count %></strong>
+        <strong><%= link_to "Likes:", new_user_post_like_path(@user, post.id) %>  <%= post.likes.count %></strong>
       </span>
       <div class="comment-display">
       <%= render post.five_most_recent_comments %>
