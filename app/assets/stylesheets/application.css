@@ -117,3 +117,49 @@ a:active {
   border-right: solid 2px #ccc;
   border-bottom: solid 2px #ccc;
 }
+
+.post-text h3,
+.title {
+  text-align: center;
+}
+
+.create-new-post h2,
+.post-form,
+.new-comment,
+.new-post,
+.add-comment {
+  display: flex;
+  justify-content: center;
+}
+
+.post-form form,
+.new-comment form {
+  border: solid 5px #ccc;
+  padding: 2%;
+  margin: 1% 0;
+  font-size: 20px;
+}
+
+.post-form form input,
+.new-comment form input {
+  width: 100%;
+  height: 40px;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 0 2%;
+  font-size: 20px;
+}
+
+.new-comment form textarea {
+  width: 100%;
+  height: 100px;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 0 2%;
+  font-size: 20px;
+}
+
+.add-comment {
+  font-size: 20px;
+  font-weight: bolder;
+}
