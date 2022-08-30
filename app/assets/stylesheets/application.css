@@ -121,6 +121,7 @@ a:active {
 .post-text h3,
 .title {
   text-align: center;
+  text-transform: capitalize;
 }
 
 .create-new-post h2,
