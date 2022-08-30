@@ -2,12 +2,12 @@
 
   <div>
     <%= form.label :user_id, "User ID:" %>
-    <%= form.number_field :user_id, label: false %>
+    <%= form.number_field :user_id, label: false, value: @user.id %>
   </div>
 
   <div>
     <%= form.label :post_id, "Post ID:" %>
-    <%= form.text_field :post_id, label: false %>
+    <%= form.text_field :post_id, label: false, value: @post.id %>
   </div>
 
   <div>
