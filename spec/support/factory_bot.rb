@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :user do
-    name { 'Johnny Doe' }
+    name { 'John Doe' }
     photo { 'https://avatars3.githubusercontent.com/u/17098?s=460&v=4' }
     bio { 'I am a developer' }
     posts_counter { 0 }
