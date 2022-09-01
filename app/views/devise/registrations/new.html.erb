@@ -1,5 +1,6 @@
+<div class="sign">
 <h2>Sign up</h2>
-
+<div class="sign-form">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
@@ -15,7 +16,7 @@
 
   <div class="field">
     <%= f.label :bio %><br />
-    <%= f.text_field :bio, autofocus: true, autocomplete: "bio" %>
+    <%= f.text_area :bio, autofocus: true, autocomplete: "bio" %>
   </div>
 
   <div class="field">
@@ -44,5 +45,6 @@
     <%= f.submit "Sign up" %>
   </div>
 <% end %>
-
+</div>
 <%= render "devise/shared/links" %>
+</div>
