@@ -11,6 +11,8 @@
  <div class="post-text">
     <h3><%= @post.title %> </h3>
     <p><%= @post.text %> </p>
+    <%= button_to "Delete", {:controller => :posts,
+    :action => 'destroy', :id => @post.id }, :method => :delete %>
 </div>
 <div class="all-comments">
 <%= render @post.comments %>

@@ -1,9 +1,5 @@
 class UsersController < ApplicationController
-  # before_action :authenticate_user!
-  # user_signed_in?
-  # current_user
-  # user_session
-
+  
   def index
     @users = User.all
   end
@@ -11,5 +7,12 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @posts = Post.where(user_id: @user.id)
+  end
+
+  def destroy
+    @user = User.find(params[:user_id])
+    @post = Post.find(params[:id])
+    @post.destroy
+    redirect_to user_posts_path(@user)
   end
 end
