@@ -1,4 +1,9 @@
 <div class="create-new-post">
 <h2> Create A Post </h2>
+<% if user_signed_in? %>
 <div class="post-form"> <%= render "form" %> </div>
+<% else %>
+<%= link_to 'Sign In', new_user_session_path %> 
+<%= link_to 'Sign Up', new_user_registration_path %>
+<% end %>
 </div>
