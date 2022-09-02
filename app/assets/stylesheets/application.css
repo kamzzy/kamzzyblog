@@ -185,3 +185,12 @@ p {
 .cancel-acc span {
   padding: 0 1%;
 }
+
+.sign-link {
+  font-size: 20px;
+  border: solid 5px #ccc;
+  padding: 2%;
+  display: inline-flex;
+  justify-content: center;
+  margin: 2%;
+}
