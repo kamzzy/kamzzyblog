@@ -1,13 +1,13 @@
 <div class="one-post">
-<%# <% if user_signed_in? %> 
+<% if user_signed_in? %>
 <%= button_to 'Sign Out', destroy_user_session_path, method: :delete %>
 
 <h1>Post #<%= @post.id %> By <%= @post.user.name %>  </h1>
 <span class="add-comment"><%= link_to "Add A Comment", new_user_post_comment_path(@user, @post.id) %> </span>
-<span class= "counter-span"> 
-<strong>Comments: <%= @post.comments.count %> </strong>
-<strong>Likes: <%= @post.likes.count %> </strong>
- </span>
+ <span class="counter-span">
+        <strong><%= link_to  "Add Comments:", new_user_post_comment_path(@user, @post.id) %> <%= @post.comments.count %></strong>
+        <strong><%= link_to "Likes:", new_user_post_like_path(@user, @post.id) %>  <%= @post.likes.count %></strong>
+      </span>
  <div class="post-text">
     <h3><%= @post.title %> </h3>
     <p><%= @post.text %> </p>
@@ -17,7 +17,8 @@
 <div class="all-comments">
 <%= render @post.comments %>
 </div>
-<%# <% else %> 
+<% else %>
 <%= link_to 'Sign In', new_user_session_path %>
 <%= link_to 'Sign Up', new_user_registration_path %>
+<% end %>
 </div>
