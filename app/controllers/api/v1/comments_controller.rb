@@ -1,4 +1,4 @@
-class Api::V1::CommentsController < Api::V1::ApplicationController
+class Api::V1::CommentsController < ApplicationController
   def show
     @comment = Comment.find(params[:user_id])
     @user = User.find(params[:user_id])
