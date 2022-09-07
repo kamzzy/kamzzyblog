@@ -10,8 +10,7 @@ class Api::V1::CommentsController < ApplicationController
     @comment.user_id = params[:user_id]
     @comment.post_id = params[:post_id]
     if @comment.save
-      redirect_to user_post_path(@comment.user_id, @comment.post_id)
-      render json: @comment
+      render json: @comment, status: :created
     else
       render :new
     end
