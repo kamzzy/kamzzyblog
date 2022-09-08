@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_action :authenticate_user!
+  load_and_authorize_resource
   def index
     @posts = Post.where(user_id: params[:user_id])
     @user = User.find(params[:user_id])
@@ -23,6 +25,13 @@ class PostsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def destroy
+    @user = User.find(params[:user_id])
+    @post = Post.find(params[:id])
+    @post.destroy
+    redirect_to user_posts_path(@user)
   end
 
   private

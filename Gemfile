@@ -75,4 +75,7 @@ group :test do
 end
 
 gem 'bullet'
+gem 'cancancan'
+gem 'devise'
+gem 'letter_opener', group: :development
 gem 'rails-controller-testing'
