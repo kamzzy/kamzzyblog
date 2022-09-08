@@ -1,7 +1,6 @@
 require 'spec_helper'
 RSpec.describe 'Post integrations', type: :feature do
   it 'displays all posts' do
- 
     user = FactoryBot.create(:user)
     user.confirmed_at = Time.now
     user.save
@@ -11,7 +10,7 @@ RSpec.describe 'Post integrations', type: :feature do
     visit user_posts_path(user)
     expect(page).to have_content('My first post', count: 2)
   end
- 
+
   it 'displays user profile' do
     user = FactoryBot.create(:user)
     user.confirmed_at = Time.now
@@ -20,7 +19,7 @@ RSpec.describe 'Post integrations', type: :feature do
     visit user_posts_path(user)
     expect(page).to have_content('John Doe')
   end
- 
+
   it 'redirects to add new comment page when user clicks on "Add Comments:" link' do
     user = FactoryBot.create(:user)
     user.confirmed_at = Time.now

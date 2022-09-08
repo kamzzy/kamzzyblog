@@ -8,6 +8,7 @@ AllCops:
     - "Rakefile"
     - "node_modules/**/*"
     - "vendor/bundle/**/*"
+    - "app/models/**/*"
 
   DisplayCopNames: true
 
@@ -27,7 +28,7 @@ Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
   IgnoredMethods: ['describe']
-  Max: 30
+  Max: 41
 
 Style/Documentation:
   Enabled: false
