@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Api::V1::Users::SessionsController < Devise::SessionsController
   protect_from_forgery with: :null_session
 
@@ -15,7 +13,7 @@ class Api::V1::Users::SessionsController < Devise::SessionsController
   end
 
   def respond_to_on_destroy
-    jwt_payload = request.headers['Authorization'].split(' ')[1], ENV.fetch['DEVISE_JWT_SECRET_KEY'].first
+    jwt_payload = request.headers['Authorization'].split[1], ENV.fetch['DEVISE_JWT_SECRET_KEY'].first
     current_user = User.find(jwt_payload['sub'])
     if current_user
       render json: {
