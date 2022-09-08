@@ -1,0 +1,15 @@
+<div class="one-post">
+<h1>Post #<%= @post.id %> By <%= @post.user.name %>  </h1>
+<span class="add-comment"><%= link_to "Add A Comment", new_user_post_comment_path(@user, @post.id) %> </span>
+<span class= "counter-span"> 
+<strong>Comments: <%= @post.comments.count %> </strong>
+<strong>Likes: <%= @post.likes.count %> </strong>
+ </span>
+ <div class="post-text">
+    <h3><%= @post.title %> </h3>
+    <p><%= @post.text %> </p>
+</div>
+<div class="all-comments">
+<%= render @post.comments %>
+</div>
+</div>

@@ -13,3 +13,153 @@
  *= require_tree .
  *= require_self
  */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  margin: 24px;
+}
+
+.grid-photo {
+  grid-column: 1;
+  margin-right: 4%;
+  height: 95px;
+  border: solid 5px #ccc;
+}
+
+.grid-photo img {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-item {
+  grid-column: 2/6;
+  height: 95px;
+  border: solid 5px #ccc;
+  text-transform: capitalize;
+}
+
+.grid-item h1 {
+  padding-left: 2%;
+  margin: 0;
+}
+
+.post-counter {
+  font-weight: 600;
+  display: flex;
+  justify-content: end;
+  padding: 0 2% 2% 0;
+  font-size: 20px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #000;
+}
+
+.user_bio {
+  grid-column: 1/6;
+  height: auto;
+  border: solid 5px #ccc;
+  font-size: 20px;
+  padding: 12px;
+}
+
+.post-display {
+  grid-column: 1/6;
+  height: auto;
+  border: solid 5px #ccc;
+  font-size: 20px;
+}
+
+.counter-span {
+  font-weight: 600;
+  display: flex;
+  justify-content: end;
+  padding: 0 3%;
+}
+
+.counter-span strong {
+  padding: 0 1%;
+  font-size: 20px;
+}
+
+.one-post h1 {
+  text-transform: capitalize;
+}
+
+.post-text {
+  padding: 2%;
+  border: solid 5px #ccc;
+  margin: 1% 0;
+  font-size: 20px;
+}
+
+.see-more {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.comment-display {
+  grid-column: 1/6;
+  height: auto;
+  font-size: 18px;
+  border-top: solid 2px #ccc;
+  text-transform: capitalize;
+}
+
+.all-comments {
+  border-left: solid 2px #ccc;
+  border-right: solid 2px #ccc;
+  border-bottom: solid 2px #ccc;
+}
+
+.post-text h3,
+.title {
+  text-align: center;
+}
+
+.create-new-post h2,
+.post-form,
+.new-comment,
+.new-post,
+.add-comment {
+  display: flex;
+  justify-content: center;
+}
+
+.post-form form,
+.new-comment form {
+  border: solid 5px #ccc;
+  padding: 2%;
+  margin: 1% 0;
+  font-size: 20px;
+}
+
+.post-form form input,
+.new-comment form input {
+  width: 100%;
+  height: 40px;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 0 2%;
+  font-size: 20px;
+}
+
+.new-comment form textarea {
+  width: 100%;
+  height: 100px;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 0 2%;
+  font-size: 20px;
+}
+
+.add-comment {
+  font-size: 20px;
+  font-weight: bolder;
+}
