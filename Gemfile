@@ -77,5 +77,8 @@ end
 gem 'bullet'
 gem 'cancancan'
 gem 'devise'
+gem 'devise-jwt'
+gem 'dotenv-rails', groups: %i[development test]
 gem 'letter_opener', group: :development
+gem 'rack-cors'
 gem 'rails-controller-testing'
