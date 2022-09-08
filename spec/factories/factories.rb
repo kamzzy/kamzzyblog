@@ -11,6 +11,7 @@ FactoryBot.define do
     email { 'test@test.com' }
     password { '123456' }
     password_confirmation { '123456' }
+    jti { '08da43f5-7eef-4f14-90a1-1252863e070f' }
   end
   factory :post do
     user
