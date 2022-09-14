@@ -1,4 +1,4 @@
-
+<% if user_signed_in? %>
 <%= button_to 'Sign Out', destroy_user_session_path, method: :delete %>
 <%= render @user %>
 <div class="grid-container">
@@ -9,6 +9,7 @@
 <span class="see-more">  
 <%= link_to "See More Posts", user_posts_path(@user) %>
 </span> 
-
+<% else %>
 <%= link_to 'Sign In', new_user_session_path %>
 <%= link_to 'Sign Up', new_user_registration_path %>
+<% end %>

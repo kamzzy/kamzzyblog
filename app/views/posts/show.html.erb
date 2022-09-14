@@ -1,5 +1,5 @@
 <div class="one-post">
-
+<% if user_signed_in? %>
 <%= button_to 'Sign Out', destroy_user_session_path, method: :delete %>
 
 <h1>Post #<%= @post.id %> By <%= @post.user.name %>  </h1>
@@ -17,8 +17,8 @@
 <div class="all-comments">
 <%= render @post.comments %>
 </div>
-
+<%else%>
 <%= link_to 'Sign In', new_user_session_path %>
 <%= link_to 'Sign Up', new_user_registration_path %>
-
+<%end%>
 </div>
