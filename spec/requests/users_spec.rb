@@ -11,7 +11,10 @@ RSpec.describe 'Users', type: :request do
       expect(response).to render_template('index')
     end
     it 'renders the show template' do
-      user = create(:user)
+      user = FactoryBot.create(:user)
+      user.confirmed_at = Time.now
+      user.save
+      login_as(user, scope: :user)
       get "/users/#{user.id}"
       expect(response).to render_template('show')
     end

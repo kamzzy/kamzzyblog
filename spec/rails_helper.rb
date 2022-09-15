@@ -79,4 +79,8 @@ RSpec.configure do |config|
   config.after(:each) do
     DatabaseCleaner.clean
   end
+  config.include Warden::Test::Helpers
+  config.after :each do
+    Warden.test_reset!
+  end
 end
